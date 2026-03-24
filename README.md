@@ -1,11 +1,9 @@
-
-
 # Parking Log Monitor
 
 A Linux-based log monitoring and analysis tool built to simulate
 and monitor a parking access control system.
 
-Built as a hands-on learning project to demonstrate Linux shell
+Built as a hands-on learning project to demonstrate the Linux shell
 scripting, Python, and PostgreSQL skills in a context relevant
 to smart parking systems.
 
@@ -17,7 +15,7 @@ to smart parking systems.
   (tail -f, grep, awk) and alerts on errors and warnings
 - Parses and stores every event as structured data in PostgreSQL
 - Generates QA analysis reports via SQL queries - payment
-  failure rates, camera fault frequency, vehicles still parked
+  failure rates, camera fault frequency, and vehicles still parked
 
 ## Tech Stack
 
@@ -51,6 +49,21 @@ Terminal 3 - run the database logger:
 
 Terminal 4 - generate the QA report:
   python3 query_report.py
+
+## Screenshots
+
+### Live log simulator + shell monitor running together
+![Parking Logs Simulation](screenshots/T1.png)
+![Monitor alerts](screenshots/T2_1.png)
+![Monitor alerts](screenshots/T2_2.png)
+
+
+### Database logger inserting events into PostgreSQL
+![DB Logger](screenshots/T3.png)
+
+### QA analysis report
+![Query Report](screenshots/T4_1.png)
+![Query Report](screenshots/T4_2.png)
 
 ## Key SQL Queries
 
