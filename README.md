@@ -27,27 +27,27 @@ to smart parking systems.
 
 ## Project Structure
 
-simulate_logs.py  - generates fake parking system log events
-monitor.sh        - shell script: watches log, alerts on errors
-check_alerts.sh   - shell summary: counts errors by type/camera
-db_logger.py      - parses log lines and inserts into PostgreSQL
-query_report.py   - SQL-based QA report from the database
+- simulate_logs.py  - generates fake parking system log events
+- monitor.sh        - shell script: watches log, alerts on errors
+- check_alerts.sh   - shell summary: counts errors by type/camera
+- db_logger.py      - parses log lines and inserts into PostgreSQL
+- query_report.py   - SQL-based QA report from the database
 
 ## How to Run
 
-Start PostgreSQL:
+1. Start PostgreSQL:
   sudo service postgresql start
 
-Terminal 1 - run the simulator:
+2. Terminal 1 - run the simulator:
   python3 simulate_logs.py
 
-Terminal 2 - run the shell monitor:
+3. Terminal 2 - run the shell monitor:
   ./monitor.sh
 
-Terminal 3 - run the database logger:
+4. Terminal 3 - run the database logger:
   python3 db_logger.py
 
-Terminal 4 - generate the QA report:
+5. Terminal 4 - generate the QA report:
   python3 query_report.py
 
 ## Screenshots
