@@ -1,0 +1,4 @@
+parking_events.log
+alerts.log
+__pycache__/
+*.pyc
